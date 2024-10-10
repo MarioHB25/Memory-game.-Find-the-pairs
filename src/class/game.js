@@ -59,7 +59,7 @@ class Game {
         if (freeBox.length === 0) {
             setTimeout(() => {
                 this.timer.stop();
-                alert('Juego Finalizado!');
+                alert('Finished. Congratulations!!');
             }, 200);
         };
     };
@@ -159,13 +159,13 @@ class Game {
             rows = parseInt(localStorage.getItem('rows'));
             cols = parseInt(localStorage.getItem('cols'));
         }else {
-            rows = parseInt(prompt('Introduzca el número de filas.'));
-            cols = parseInt(prompt('Introduzca el número de columnas.'));
+            rows = parseInt(prompt('Enter the number of rows.'));
+            cols = parseInt(prompt('Enter the number of columns.'));
 
             while(rows * cols % 2 !== 0) {
-                alert('El número de cartas debe ser par, vuelva a introducir los datos');
-                rows = parseInt(prompt('Introduzca el número de filas.'))
-                cols = parseInt(prompt('Introduzca el número de columnas.'))
+                alert('The number of cards must be even, re-enter the data');
+                rows = parseInt(prompt('Enter the number of rows.'))
+                cols = parseInt(prompt('Enter the number of columns.'))
             };
 
             localStorage.setItem('rows', rows);
