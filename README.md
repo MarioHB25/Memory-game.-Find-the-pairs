@@ -16,7 +16,7 @@
    preview 📸
 </h2>
 
-<img src=".preview/Project Header Business Agency.png/" alt="Banner"/>
+<img src="preview/find-the-pairs.png/" alt="Banner"/>
 
 <h2 align="center" style="color: #0366d6;">
    Visit the web site on ⬇️
